@@ -1,2 +1,2 @@
 # Storemanager
-Storemanager sirve para administrar todos los productos de una tienda y llevar la contabilidad.
+Storemanager is used to manage all the products of a store and organize finances.
