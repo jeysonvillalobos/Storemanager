@@ -9,7 +9,7 @@ var Routes = require('./routes/routes');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'app/views'));
 app.set('view engine', 'hbs');
 
 app.use(logger('dev'));
@@ -33,7 +33,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('layouts/error');
 });
 
 module.exports = app;

@@ -1,9 +1,14 @@
 var express = require('express');
 var router = express.Router();
+var load = require('../middleware/load');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+
+
+/* ---------  Static Pages --------- */
+
+router.use('/',load.Controller('staticPages'));
+
+
+
 
 module.exports = router;
