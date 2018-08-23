@@ -1,0 +1,22 @@
+/* Guia de estilo 
+1. Reset
+2. Menu
+3. Main
+*/
+
+/* -------- 1. Reset -------- */
+@import './reset.css';  
+/* -------- 2. Menu -------- */
+
+@import './menu.css'; 
+
+/* -------- 3. Main -------- */
+.main{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.main h1{
+	font-size: 30px;
+	margin-bottom: 300px;
+}

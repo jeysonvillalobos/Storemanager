@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var hbs = require("hbs");
 
 var Routes = require('./routes/routes');
 
@@ -11,6 +12,7 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'app/views'));
 app.set('view engine', 'hbs');
+hbs.registerPartials(path.join(__dirname, 'app/views/layouts'));
 
 app.use(logger('dev'));
 app.use(express.json());

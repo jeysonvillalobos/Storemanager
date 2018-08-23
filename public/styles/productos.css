@@ -1,0 +1,145 @@
+/* Guia de estilo 
+1. Reset
+2. Menu
+3. Main
+4. Contenedor
+5. Tabla
+6. cuadro-3
+*/
+
+/* -------- 1. Reset -------- */
+@import './reset.css';  
+/* -------- 2. Menu -------- */
+
+@import './menu.css'; 
+
+/* -------- 3. Main -------- */
+.main{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction:column;
+}
+
+/* -------- 4. Contenedor -------- */
+.titulo{
+	font-size: 25px;
+	margin:15px; 
+}
+.contenedor{
+	width: 50%;
+	height: auto;
+	padding: 5px;
+	overflow: hidden;
+}
+.txt1{
+	width: 98.2%;
+	height: 30px;
+	margin-bottom:10px;
+	border:1px solid #cbcbcb;
+	outline: none;
+	padding: 4px 4px 4px 10px;
+}
+.cuadro-1{
+	width: 100%;
+	height: 200px;
+	border:1px solid #cbcbcb;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+}
+.cuadro-1 .item-1{
+	width: 50%;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+}
+.cuadro-1 .item-1 .foto{
+	width: 250px;
+	height: auto;
+	background-image: url('https://truffle-assets.imgix.net/53c582f4-torta-alfajor-s-thumb.jpg');
+	background-size:contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.cuadro-1 .item-2{
+	width: 50%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.cuadro-1 .item-2 label{
+	margin:10px;
+	font-size: 18px; 
+}
+.txtCantidad{
+	margin:10px;
+	padding: 5px;
+	outline: none;
+	border:1px solid #cbcbcb;
+}
+.btn1{
+	margin:10px;
+	width: 200px;
+	height: 30px;
+	padding: 8px;
+	background-color:#f7f7f7;
+	border:1px solid #cbcbcb;
+	cursor: pointer;
+	outline: none;
+}
+.btn1:active{
+	background-color: gray;
+	color: white;
+}
+
+/* -------- 5. Tabla -------- */
+.cuadro-2{
+	width: 100%;
+	height: 200px;
+	margin-top: 10px;
+	overflow: scroll;
+	border:1px solid #cbcbcb;
+}
+.cuadro-2 .tabla{
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+}
+th{
+	border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+}
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/* -------- 6. cuadro-3 -------- */
+
+.cuadro-3{
+	margin-top: 10px;
+	padding: 5px;
+	border:1px solid #cbcbcb;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.cuadro-3 label{
+	margin: 5px;
+}
+.cuadro-3 button{
+	margin:5px;
+	width: 100px;
+	height: 30px;
+	padding: 8px;
+	background-color:#f7f7f7;
+	border:1px solid #cbcbcb;
+	cursor: pointer;
+	outline: none;
+}
