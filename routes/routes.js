@@ -9,6 +9,9 @@ router.use('/',load.Controller('staticPages'));
 /* ---------  productosController --------- */
 router.use('/productos',load.Controller('productosController'));
 
+/* ---------  fiadosController --------- */
+router.use('/fiados',load.Controller('fiadosController'));
+
 
 
 

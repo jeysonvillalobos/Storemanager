@@ -93,6 +93,7 @@
 .btn1:active{
 	background-color: gray;
 	color: white;
+	cursor: pointer;
 }
 
 /* -------- 5. Tabla -------- */
@@ -133,7 +134,7 @@ td {
 .cuadro-3 label{
 	margin: 5px;
 }
-.cuadro-3 button{
+.botonCotizar{
 	margin:5px;
 	width: 100px;
 	height: 30px;
@@ -143,3 +144,10 @@ td {
 	cursor: pointer;
 	outline: none;
 }
+.botonCotizar:active{
+	background-color: gray;
+	color: white;
+	cursor: pointer;
+}
+
+
