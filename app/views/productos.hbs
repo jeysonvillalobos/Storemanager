@@ -3,10 +3,53 @@
 <head>
 	<title>Bienvenido</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="styles/staticPage.css">
+	<link rel="stylesheet" type="text/css" href="styles/productos.css">
 </head>
 <body>
 	{{> menu}}
-	<h1>Productos</h1>
+	<main class="main">
+		<h1 class="titulo">Productos</h1>
+		<div class="contenedor">
+			<input type="text" name="txt1" placeholder="Buscar producto" class="txt1">
+			<div class="cuadro-1">
+				<div class="item-1">
+					<div class="foto"></div>
+				</div>
+				<div class="item-2">
+					<label>Nombre: Torta</label>
+					<label>Precio: $5.000</label>
+					<input type="text" placeholder="Cantidad" class="txtCantidad" value="1">
+					<input type="button" class="btn1" value="Agregar">
+				</div>
+			</div>
+			<div class="cuadro-2">
+				<table class="tabla">
+				  <tr>
+				    <th>Nombre</th>
+				    <th>Precio</th> 
+				    <th>Cantidad</th>
+				  </tr>
+				  <tr>
+				    <td>Torta</td>
+				    <td>$5.000</td> 
+				    <td>1</td>
+				  </tr>
+				  <tr>
+				    <td>Pastel de arequipe</td>
+				    <td>$1.000</td> 
+				    <td>1</td>
+				  </tr>
+				  
+
+				</table>
+			</div>
+			<div class="cuadro-3">
+				<label>Total: $ 6.000</label>
+				<button class="botonCotizar">Cotizar</button>
+			</div>
+		</div>
+
+
+	</main>
 </body>
 </html>
