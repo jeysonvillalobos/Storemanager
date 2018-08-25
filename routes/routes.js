@@ -12,6 +12,9 @@ router.use('/productos',load.Controller('productosController'));
 /* ---------  fiadosController --------- */
 router.use('/fiados',load.Controller('fiadosController'));
 
+/* ---------  usuariosController --------- */
+router.use('/usuarios',load.Controller('usuariosController'));
+
 
 
 

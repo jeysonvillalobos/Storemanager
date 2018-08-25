@@ -1,0 +1,43 @@
+/* Guia de estilo 
+1. Reset
+2. Menu
+3. Main
+4. Contenedor
+5. Tabla
+6. cuadro-3
+*/
+
+/* -------- 1. Reset -------- */
+@import './reset.css';  
+/* -------- 2. Menu -------- */
+
+@import './menu.css'; 
+
+/* -------- 3. Main -------- */
+.main{
+	display: flex;
+	align-items: center;
+	flex-direction:column;
+}
+
+/* -------- 4. Contenedor -------- */
+.titulo{
+	font-size: 25px;
+	margin:15px; 
+}
+.contenedor{
+	width: 50%;
+	height: auto;
+	padding: 5px;
+	overflow: hidden;
+	margin-top: 80px;
+	text-align: center;
+}
+.txt1{
+	width: 98.2%;
+	height: 30px;
+	margin-bottom:10px;
+	border:1px solid #cbcbcb;
+	outline: none;
+	padding: 4px 4px 4px 10px;
+}
