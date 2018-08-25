@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bienvenido</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/styles/fiados.css">
+</head>
+<body>
+	{{> menu}}
+	<main class="main">
+		<div class="contenedor">
+			<h1>Lucas Casemiro Perez</h1>
+			<p class="texto">Estos son los productos fiados de Lucas Casemiro Perez</p>
+			<table class="tabla">
+			  <tr>
+			    <th>Nombre producto</th>
+			    <th>Cantidad</th> 
+			    <th>Precio</th>
+			    <th>Estado</th>
+			  </tr>
+
+
+			  <tr>
+			    <td>Torta</td>
+			    <td>1</td> 
+			    <td>$ 1.000</td>
+			    <td class="maximoFiar">Sin pagar <button>Pago</button></td>
+			  </tr>
+			  <tr>
+			    <td>Gaseosa cocacola</td>
+			    <td>1</td> 
+			    <td>$ 3.400</td>
+			    <td class="maximoFiar">Sin pagar <button>Pago</button></td>
+			  </tr>
+
+
+		</div>
+
+
+		  
+		</table>
+		<button class="buttonPago">Pago todo los productos</button>
+		<label class="label">Total productos: $ 5.000</label>
+
+	</main>
+</body>
+</html>

@@ -67,7 +67,18 @@ td a{
 .maximoFiar{
 	color: red;
 }
-
+.label{
+	margin: 20px;
+}
+.texto{
+	margin-bottom: 20px;
+}
+button{
+	cursor:pointer;
+}
+.buttonPago{
+	margin-top: 20px;
+}
 
 
 
