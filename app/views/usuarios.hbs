@@ -11,11 +11,16 @@
 		
 		<div class="contenedor">
 			<h1 class="titulo">Agregar usuarios</h1>
-			<form action="#" method="POST">
+			<form action="/usuarios" method="POST">
 				<input type="text" name="txt1" placeholder="Nombre" class="txt1">
 				<input type="submit" value="Agregar usuario">
 			</form>
 		</div>
+		{{#if mensaje}}
+			<div class="usuarioInsertado">
+				<h3>Usuario insertado correctamente</h3>
+			</div>
+		{{/if}}
 	</main>
 </body>
 </html>

@@ -216,3 +216,6 @@ td {
 .listaFiadores table{
 	margin:10px;
 }
+.listaFiadores table tr button {
+	cursor: pointer;
+}

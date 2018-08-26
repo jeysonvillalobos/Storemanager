@@ -3,8 +3,7 @@
 2. Menu
 3. Main
 4. Contenedor
-5. Tabla
-6. cuadro-3
+5. usuarioInsertado
 */
 
 /* -------- 1. Reset -------- */
@@ -40,4 +39,12 @@
 	border:1px solid #cbcbcb;
 	outline: none;
 	padding: 4px 4px 4px 10px;
+}
+
+/* -------- 5. usuarioInsertado -------- */
+.usuarioInsertado{
+	background-color:rgba(142, 255, 114, 0.5);
+	margin:20px;
+	padding: 10px;
+	border-radius: 5px;
 }
