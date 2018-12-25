@@ -6,8 +6,8 @@ var load = require('../middleware/load');
 router.use('/',load.Controller('staticPages'));
 
 
-/* ---------  productosController --------- */
-router.use('/productos',load.Controller('productosController'));
+/* ---------  venderController --------- */
+router.use('/vender',load.Controller('venderController'));
 
 /* ---------  fiadosController --------- */
 router.use('/fiados',load.Controller('fiadosController'));
