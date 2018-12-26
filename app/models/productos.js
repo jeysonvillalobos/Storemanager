@@ -24,6 +24,10 @@ module.exports = {
                         db.query(`INSERT INTO ventas(idproducto, cantidad, ventas_total, ganancias) VALUES ('${idproducto}','${cantidad}','${precio}','${ganancias}')`);
 
                 });
+        },
+
+        agregarProducto:function(datos){
+                db.query(`INSERT INTO productos(nombre, precio_de_compra, precio_de_venta, cantidad) VALUES ('${datos[0].nombre}','${datos[0].PrecioCompra}','${datos[0].PrecioVenta}','${datos[0].Cantidad}')`,function(err,result,field){});
         }
 
 };

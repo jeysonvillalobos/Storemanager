@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Productos</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/styles/productos.css">
+</head>
+<body>
+	{{> menu}}
+	<main class="main">
+		
+		<div class="contenedor">
+			<h1 class="titulo">Agregar productos</h1>
+			<form action="/productos/agregarProducto" method="POST">
+				<input type="text" name="txtNombre" placeholder="Nombre" class="txt1 txtNombre" autofocus>
+                <input type="text" name="txtPrecioCompra" placeholder="Precio de compra" class="txt1">
+                <input type="text" name="txtPrecioVenta" placeholder="Precio de venta" class="txt1">
+                <input type="text" name="txtCantidad" placeholder="Cantidad" class="txt1">
+				<input type="submit" value="Agregar producto">
+			</form>
+		</div>
+		{{#if mensaje}}
+			<div class="usuarioInsertado">
+				<h3>Producto agregado correctamente</h3>
+			</div>
+		{{/if}}
+	</main>
+</body>
+</html>

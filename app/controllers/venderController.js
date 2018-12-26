@@ -1,6 +1,5 @@
 var express = require("express");
 var router = express.Router();
-var router  = express.Router();
 var load    = require('../../middleware/load');
 var productos = load.Model("productos");
 

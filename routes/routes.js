@@ -12,11 +12,11 @@ router.use('/vender',load.Controller('venderController'));
 /* ---------  fiadosController --------- */
 router.use('/fiados',load.Controller('fiadosController'));
 
-/* ---------  usuariosController --------- */
-router.use('/usuarios',load.Controller('usuariosController'));
+/* ---------  clientesController --------- */
+router.use('/clientes',load.Controller('clientesController'));
 
 /* ---------  productosController --------- */
-router.use('/usuarios',load.Controller('productosController'));
+router.use('/productos',load.Controller('productosController'));
 
 
 
