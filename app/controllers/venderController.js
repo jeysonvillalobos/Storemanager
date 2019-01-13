@@ -2,6 +2,7 @@ var express = require("express");
 var router = express.Router();
 var load    = require('../../middleware/load');
 var productos = load.Model("productos");
+var ventas = load.Model("ventas");
 
 router.get('/',function(req,res){
 	res.render('vender',{layout:false});
@@ -32,6 +33,15 @@ router.post('/guardarCotizacion',function(req,res){
 	}
 
 	return;
+});
+
+router.get('/ventas',function(req,res){
+	ventas.ventas(function(dato){
+		ventas.gananciasYtotal(function(datos){
+			res.render('ventas',{ventas:dato,gananciasYtotal:datos,layout:false});
+		});
+	});
+	
 });
 
 module.exports = router;

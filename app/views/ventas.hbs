@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bienvenido</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/styles/ventas.css">
+</head>
+<body>
+	{{> menu}}
+	<main class="main">
+
+		<div id="login" class="login">
+				<h1>Login</h1>
+				<br>
+				<input type="text" placeholder="Usuario" class="txt" id="txtUsuario" autofocus>
+				<input type="password" placeholder="Contaseña" class="txt" id="txtContrasena">
+				<input type="button" value="Login" class="button" id="botonLogin">
+
+		</div>
+		
+		<div class="contenedor" id="contenedor">
+			<h1>Ventas</h1>
+			<p class="texto">Estas son las venta.</p>
+			<table class="tabla">
+			  <tr>
+			    <th>Nombre producto</th>
+			    <th>Cantidad</th> 
+					<th>Precio de compra</th> 
+					<th>Precio de venta</th> 
+			    <th>Venta total del producto</th>
+			    <th>Ganancia</th>
+			  </tr>
+				{{#each ventas}}
+			  <tr>
+			    <td>{{nombre}}</td>
+			    <td>{{cantidad}}</td> 
+					<td>$ {{precio_de_compra}}</td>
+					<td>$ {{precio_de_venta}}</td>
+			    <td>$ {{ventas_total}}</td>
+			    <td>$ {{ganancias}}</td>
+			  </tr>
+				{{/each}}
+
+		</div>
+		</table>
+		<br>
+		
+		{{#each gananciasYtotal}}
+			<label class="label">Total productos: $ {{total_ventas}}</label>
+			<br>
+			<br>
+			<label class="label">Ganancias: $ {{ganancias}}</label>
+		{{/each}}
+	</main>
+
+	<script src="/Javascript/ventas.js"></script>
+</body>
+</html>
