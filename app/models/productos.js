@@ -22,7 +22,7 @@ module.exports = {
                         var precio_de_venta = result[0]["precio_de_venta"];
                         var ganancias = (Number(precio_de_venta) - Number(precio_de_compra)) * Number(cantidad);
                         db.query(`INSERT INTO ventas(idproducto, cantidad, ventas_total, ganancias) VALUES ('${idproducto}','${cantidad}','${precio}','${ganancias}')`);
-
+                        db.query(`INSERT INTO ventas_totales(idproducto, cantidad, ventas_total, ganancias,fecha) VALUES ('${idproducto}','${cantidad}','${precio}','${ganancias}',CURRENT_TIMESTAMP)`);
                 });
         },
 
