@@ -65,13 +65,12 @@ btnCotizar.onclick = function(){
           </tr>`;
 
           totalPrecio.innerHTML = "Total: $ 0";
-
+          txtbuscarProductos.focus();
+            
         }
         else{
             alert('El dinero recibido es de $' +  dineroRecibido.toLocaleString() + ' y la cuenta es de $' + sum.toLocaleString() + ' el dinero recibido no alcanza.');
         }
-
-
     }
     else{
         alert("No dejes el espacio en blanco");
