@@ -65,6 +65,7 @@ btnCotizar.onclick = function(){
           </tr>`;
 
           totalPrecio.innerHTML = "Total: $ 0";
+          txtbuscarProductos.value = "";
           txtbuscarProductos.focus();
             
         }
